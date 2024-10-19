@@ -428,17 +428,17 @@ if __name__ == '__main__':
     parser.add_argument('--tts', type=str, default='edgetts') #xtts gpt-sovits cosyvoice
     parser.add_argument('--REF_FILE', type=str, default=None)
     parser.add_argument('--REF_TEXT', type=str, default=None)
-    parser.add_argument('--TTS_SERVER', type=str, default='http://127.0.0.1:9880') # http://localhost:9000
+    parser.add_argument('--TTS_SERVER', type=str, default='http://localhost:9880') # http://localhost:9000
     # parser.add_argument('--CHARACTER', type=str, default='test')
     # parser.add_argument('--EMOTION', type=str, default='default')
 
     parser.add_argument('--model', type=str, default='ernerf') #musetalk wav2lip
 
     parser.add_argument('--transport', type=str, default='rtcpush') #rtmp webrtc rtcpush
-    parser.add_argument('--push_url', type=str, default='http://localhost:1985/rtc/v1/whip/?app=live&stream=livestream') #rtmp://localhost/live/livestream
+    parser.add_argument('--push_url', type=str, default='http://47.95.211.31:1985/rtc/v1/whip/?app=live&stream=livestream') #rtmp://localhost/live/livestream
 
     parser.add_argument('--max_session', type=int, default=1)  #multi session count
-    parser.add_argument('--listenport', type=int, default=8010)
+    parser.add_argument('--listenport', type=int, default=8080)
 
     opt = parser.parse_args()
     #app.config.from_object(opt)
